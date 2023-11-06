@@ -4,3 +4,112 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.container {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 20px;
+}
+/* Navigation Bar  */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .logo {
+    width: 170px;
+    padding-top: 10px;
+    object-fit: cover;
+  }
+  
+  .res-logo {
+    width: 150px;
+    display: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+  }
+  
+  .nav-links .list-items a {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-white);
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .nav-links .list-items-btn a {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-white);
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .nav-links .list-items a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--bg-color-white);
+    border-radius: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s ease;
+  }
+  
+  .nav-links .list-items a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .list-items a.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--bg-color-white);
+    border-radius: 1px;
+    width: 100%;
+    transition: transform 0.6s ease;
+  }
+  
+  .profile-icon img {
+    transform: scale(0.4) translateX(-60px) translateY(10px);
+    border: 2px solid var(--color-white) !important;
+  }
+  
+  .profile-icon a:hover::before {
+    transform: scaleX(0) !important;
+  }
+  
+  .close-btn {
+    display: none;
+  }
+  
+  .show-nav {
+    display: none;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .toggle:hover {
+    cursor: pointer;
+  }
