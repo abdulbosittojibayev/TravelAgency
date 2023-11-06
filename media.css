@@ -1,47 +1,39 @@
-@media only screen and (max-width: 991px) {
-  html {
-    font-size: 56.25%;
-  }
-  header {
-    padding: 2.2rem 5rem;
-  }
+@media screen and (max-width: 952px) {
+    .label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+     font-size: 16px;       
+    }
 }
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 50%;
-  }
-  #ham-menu {
-    display: block;
-    color: #ffffff;
-  }
-  nav a#logo,
-  #ham-menu {
-    font-size: 3.2rem;
-  }
-  nav ul {
-    background-color: black;
-    position: fixed;
-    left: -100vw;
-    top: 73.6px;
-    width: 100vw;
-    height: calc(100vh - 73.6px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transition: 1s;
-    gap: 0;
-  }
-}
-@media only screen and (max-width: 575px) {
-  html {
-    font-size: 46.87%;
-  }
-  header {
-    padding: 2rem 3rem;
-  }
-  nav ul {
-    top: 65.18px;
-    height: calc(100vh - 65.18px);
-  }
+@media screen and (max-width: 858px) {
+    .checkButton{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .4s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+    }
+    a:hover, a.active{
+        color: #f8f8f8;
+    }
+    .myCheckBox:checked ~ ul{
+        left: 0; 
+    }
 }

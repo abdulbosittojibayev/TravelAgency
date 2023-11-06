@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,35 +14,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
     <title>Travel Agency</title>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header>
-      <nav>
-        <a href="#home" id="logo">Site Logo</a>
-        <i class="fas fa-bars" id="ham-menu"></i>
-        <ul id="nav-bar">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Destination</a>
-          </li>
-          <li>
-            <a href="#">Offer</a>
-          </li>
-          <li>
-            <a href="#">Footer</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section></section>
+    <nav>
+      <input type="checkbox" class="myCheckBox" id="myCheck" />
+      <label for="myCheck" class="checkButton">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </label>
+      <label class="logo">Adras</label>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <script src="script.js"></script>
   </body>
 </html>
