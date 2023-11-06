@@ -2,57 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Font Awesome 5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Travel Agency</title>
   </head>
   <body>
     <!-- Navigation Bar -->
-    <div class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="/">
-                    <img src="headerLogoImage" alt="Logo" class="logo">
-                </a>
-                <ul class="nav-links">
-                    <div class="logo-close__btn">
-                        <img src="headerLogoImage" alt="Logo" class="res-logo">
-                    </div>
-                    <li class="list-items">
-                        <a href="/" onclick="navClose()">Asosiy</a>
-                    </li>
-                    <li class="list-items">
-                        <a href="/about" onclick="navClose()">Biz Haqimizda</a>
-                    </li>
-                    <li class="list-items">
-                        <a href="/services" onclick="navClose()">Xizmatlar</a>
-                    </li>
-                    <li class="list-items">
-                        <a href="/faq" onclick="navClose()">Faq</a>
-                    </li>
-                    <li class="list-items">
-                        <a href="/job" onclick="navClose()">Karyera</a>
-                    </li>
-                    <li class="list-items">
-                        <a href="/contact" onclick="navClose()">Aloqa</a>
-                    </li>
-                </ul>
-                <div class="toggle" onclick="showNav()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Main Header -->
-
-    <div class="main">
-      <div class="container">
-        <h1>Hello</h1>
-      </div>
-    </div>
-
-    
+    <header>
+      <nav>
+        <a href="#home" id="logo">Site Logo</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Destination</a>
+          </li>
+          <li>
+            <a href="#">Offer</a>
+          </li>
+          <li>
+            <a href="#">Footer</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section></section>
   </body>
 </html>
