@@ -23,7 +23,7 @@
     }
     nav ul li{
         display: block;
-        margin: 50px 0;
+        margin: -200px -500px;
         line-height: 30;
     }
     nav ul li a{
