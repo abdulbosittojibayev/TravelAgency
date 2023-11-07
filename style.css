@@ -14,48 +14,56 @@
   padding: 0 20px;
 }
 /* Navigation Bar  */
-.nav {
-  background: #fff;
-  height: 80px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #000;
+  height: 70px;
   width: 100%;
 }
-nav ul {
-  float: right;
-  margin-right: 55px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a {
-  color: #000;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: cursive;
-  padding: 7px 13px;
-}
-label.logo {
-  color: #000;
+
+.logo {
+  color: #808080;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
-  font-family: cursive;
+  cursor: pointer;
+  display: inline-block;
 }
-.checkButton {
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 14px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  color: #808080;
+  transition: all 0.5s;
+}
+
+.cheakbtn {
   font-size: 30px;
-  color: white;
+  color: #fff;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
+  margin: 3px 15px;
   cursor: pointer;
   display: none;
 }
-.myCheckBox {
+
+#cheak {
   display: none;
-}
-a:hover,
-a.active {
-  color: #f7c324;
 }
