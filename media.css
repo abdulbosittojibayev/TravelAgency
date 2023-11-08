@@ -1,47 +1,57 @@
-@media only screen and (max-width: 991px) {
-  html {
-    font-size: 56.25%;
+@media (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+    padding-left: 50px;
   }
-  header {
-    padding: 2.2rem 5rem;
+
+  nav ul li a {
+    font-size: 16px;
   }
 }
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 50%;
-  }
-  #ham-menu {
+
+@media (max-width: 858px) {
+  .cheakbtn {
     display: block;
-    color: #ffffff;
   }
-  nav a#logo,
-  #ham-menu {
-    font-size: 3.2rem;
-  }
-  nav ul {
-    background-color: black;
+
+  ul {
     position: fixed;
-    left: -100vw;
-    top: 73.6px;
-    width: 100vw;
-    height: calc(100vh - 73.6px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transition: 1s;
-    gap: 0;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover {
+    background: none;
+    color: #ffcd28;
+  }
+
+  #cheak:checked ~ ul {
+    left: 0;
   }
 }
-@media only screen and (max-width: 575px) {
-  html {
-    font-size: 46.87%;
+@media (max-width: 767px) {
+  section {
+    padding: 40px;
   }
-  header {
-    padding: 2rem 3rem;
+  .banner .content h2 {
+    font-size: 2.5em;
   }
-  nav ul {
-    top: 65.18px;
-    height: calc(100vh - 65.18px);
+  .banner .content p {
+    font-size: 1em;
   }
 }
