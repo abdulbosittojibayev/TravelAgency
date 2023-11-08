@@ -6,6 +6,7 @@
 }
 .offers{
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;    
 }
@@ -28,15 +29,16 @@
 }
 .offers__in__text h1{
     color: var(--grey-scale-black, #191825);
-    font-size: 41px;
+    font-size: 45px;
     padding: 0 0 30px 0;
+    width: 600px;
 }
 .lorem12{
     color: gray;
-    width: 80%;
-    font-size: 18px;
+    width: 150%;
+    font-size: 19px;
     font-weight: 100;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 .offers__team{
     padding: 20px 0 20px 0;
@@ -70,5 +72,100 @@
 }
 .offers__in__image{
     display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+
+
+.form{
+    width: 80%;
+    height: 600px;
+    border-radius: 50px;
+    margin: 0 0 50px 200px;
+    display: flex;
     align-items: center;
+    padding: 130px;
+    border: 1px solid #1F3E7F;
+    flex-direction: column;
+}
+.form p{
+    color: #1B3C75; 
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 30px;
+    line-height: 120%; /* 27.6px */
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+}
+.form h1{
+    color: #18407B;
+    text-align: center;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 80px;
+    line-height: 120%; /* 66px */
+}
+.form form{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 100%;
+}
+.form form input{
+    width: 600px;
+    height: 90px;
+    border-radius: 23px;
+    border: 1px solid #1C3B79;
+    background: var(--white, #FFF);
+    padding: 0 0 0 20px;
+    font-size: 18px;
+}
+.form form button{
+    padding: 20px 70px;
+    border-radius: 32px;
+    background: var(--Primary, #5D50C6);
+    font-size: 18px;
+    border: none;
+    color: #FFF;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px 50px 200px;
+}
+.footer div{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer div p{
+    color: var(--grey-scale-black-50, rgba(25, 24, 37, 0.50));
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.footer div h3{
+    color: var(--Black, #191825);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+}
+.footer div:nth-child(1) h3{
+    margin-bottom: 30px;
+}
+.foo{
+    padding: 0 200px 50px 200px;
+    font-size: 25px;
+}
+.foo i{
+    margin: 0 15px 0 0;
+    color: rgba(93, 80, 198, 1);
 }
